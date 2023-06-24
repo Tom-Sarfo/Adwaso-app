@@ -1,0 +1,28 @@
+ /* making main page and side bar scrollable */
+
+ .sidenav {
+    width: 500px;
+    position: fixed;
+    z-index: 1;
+    top: 153px;
+    right: -200px;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  
+  .main {
+    margin-right: 140px; /* Same width as the sidebar + left position in px */
+    /* font-size: 20px; Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+#main-container {
+  margin-top: 10rem;
+  padding: 0.5rem;
+}
+  

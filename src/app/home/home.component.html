@@ -1,0 +1,22 @@
+<h2>Grocery Store</h2>
+  <mat-divider></mat-divider><br>
+<div class="container" style="padding: 0.5rem;">
+  <div class="row">
+    <div style="padding: 0.5rem;" *ngFor="let product of products">
+      <div class="card" style="width: 17rem; padding: 0.5rem;">
+        <img class="card-img-top" [src]=[product.imgUrl] alt="Card image cap">
+        <div class="card-body">
+        <h6 class="card-title">{{ product.name }}</h6>
+        <span style="font-size: 15px;float: right;"><strong>¢{{ product.price }}</strong></span><br>
+        <mat-divider></mat-divider><br>
+          <button mat-raised-button color="primary">Edit</button>
+          <div class="example-button-container">
+            <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
+              <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
