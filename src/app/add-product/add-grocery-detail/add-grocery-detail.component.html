@@ -1,0 +1,8 @@
+<div [formGroup]="form">
+    <mat-form-field appearance="standard">
+        <input matInput placeholder="Name of Grocery" formControlName="groceryName" #groceryName>
+        <mat-hint align="end">
+            {{groceryName.value.length}}/15
+        </mat-hint>
+    </mat-form-field>
+</div>

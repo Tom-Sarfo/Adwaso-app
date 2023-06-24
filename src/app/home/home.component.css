@@ -1,0 +1,13 @@
+mat-grid-tile {
+    background: lightgrey;
+  }
+
+.example-button-container {
+    position:relative;
+}
+.del {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+ 
